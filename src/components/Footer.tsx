@@ -3,7 +3,7 @@ const Footer = () => (
     <div className="max-w-6xl mx-auto text-center">
       <span className="font-display text-lg font-bold text-foreground">Navira</span>
       <p className="text-muted-foreground text-sm mt-1">
-        An intelligent learning and career support system.
+        © Navira - A New Way of Navigate Learning
       </p>
     </div>
   </footer>
