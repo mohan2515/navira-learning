@@ -5,22 +5,26 @@ const features = [
   {
     icon: BookOpen,
     title: "Structured Syllabus Navigation",
-    description: "Organized into subjects, units, and topics for a clear learning path.",
+    description: "Organized into subjects, units, and topics for a clear learning path that keeps you on track.",
+    color: "bg-primary/10 text-primary",
   },
   {
     icon: MessageCircle,
     title: "AI-Powered Chatbot",
-    description: "Get context-aware answers to your academic questions instantly.",
+    description: "Get context-aware answers to your academic questions instantly using advanced NLP models.",
+    color: "bg-secondary/10 text-secondary",
   },
   {
     icon: FileText,
     title: "Resume Analysis",
-    description: "Receive detailed feedback and suggestions to improve your resume.",
+    description: "Receive detailed feedback and actionable suggestions to strengthen your resume.",
+    color: "bg-accent/10 text-accent",
   },
   {
     icon: Compass,
     title: "Career Recommendations",
-    description: "Discover internships and hackathons matched to your interests.",
+    description: "Discover internships and hackathons matched to your skills and interests.",
+    color: "bg-primary/10 text-primary",
   },
 ];
 
@@ -34,6 +38,9 @@ const FeaturesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
+          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold tracking-wider uppercase mb-4">
+            Features
+          </span>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
             What Navira Offers
           </h2>
@@ -50,10 +57,10 @@ const FeaturesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="group p-8 rounded-2xl bg-card border border-border transition-all hover:border-primary/30"
+              className="group p-8 rounded-2xl bg-card border border-border transition-all hover:border-primary/30 hover:shadow-lg"
               style={{ boxShadow: "var(--shadow-card)" }}
             >
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 text-primary-foreground" style={{ background: "var(--gradient-primary)" }}>
+              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 ${feature.color}`}>
                 <feature.icon className="w-6 h-6" />
               </div>
               <h3 className="font-display text-xl font-semibold text-foreground mb-2">
