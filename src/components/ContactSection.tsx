@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Send } from "lucide-react";
+import { Send, Mail } from "lucide-react";
 import { useState } from "react";
 
 const ContactSection = () => {
@@ -20,6 +20,9 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
+          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold tracking-wider uppercase mb-4">
+            Contact
+          </span>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
             Get Started
           </h2>
@@ -37,35 +40,35 @@ const ContactSection = () => {
           style={{ boxShadow: "var(--shadow-card)" }}
         >
           <div>
-            <label className="block text-sm font-medium text-foreground mb-1.5">Name</label>
+            <label className="block text-sm font-semibold text-foreground mb-2">Name</label>
             <input
               type="text"
               required
-              className="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 transition"
+              className="w-full px-4 py-3 rounded-xl bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/30 transition"
               placeholder="Your name"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-foreground mb-1.5">Email</label>
+            <label className="block text-sm font-semibold text-foreground mb-2">Email</label>
             <input
               type="email"
               required
-              className="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 transition"
+              className="w-full px-4 py-3 rounded-xl bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/30 transition"
               placeholder="you@example.com"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-foreground mb-1.5">Message</label>
+            <label className="block text-sm font-semibold text-foreground mb-2">Message</label>
             <textarea
               required
               rows={4}
-              className="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 transition resize-none"
+              className="w-full px-4 py-3 rounded-xl bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/30 transition resize-none"
               placeholder="How can we help?"
             />
           </div>
           <button
             type="submit"
-            className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-primary-foreground font-semibold transition-all hover:scale-[1.02] hover:shadow-lg"
+            className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-primary-foreground font-semibold transition-all hover:scale-[1.02] hover:shadow-lg"
             style={{ background: "var(--gradient-primary)" }}
           >
             {submitted ? "Sent!" : "Send Message"}
