@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+Navira - A New Way of Navigate Learning
 
-TODO: Document your project here
+
